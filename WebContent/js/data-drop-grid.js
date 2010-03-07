@@ -20,7 +20,7 @@ Ext.onReady(function(){
            'name',
            'phone',
            'email',
-           {name: 'birthday', type: 'date', dateFormat: 'd/m/Y'}           
+           {name: 'birthday', type: 'date', dateFormat: 'm/d/Y'}           
         ]
     });
 
@@ -35,7 +35,7 @@ Ext.onReady(function(){
             {header: "PHONE #", width: 150, sortable: true, dataIndex: 'phone'},
             {header: "EMAIL", width: 150, sortable: true, dataIndex: 'email'},
             {header: "BIRTHDAY", width: 100, sortable: true, dataIndex: 'birthday',
-            	renderer: Ext.util.Format.dateRenderer('d/m/Y')}
+            	renderer: Ext.util.Format.dateRenderer('m/d/Y')}
         ],
         plugins: [Ext.ux.grid.DataDrop],
         title: 'My Contacts',
